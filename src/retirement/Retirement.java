@@ -3,7 +3,7 @@ package retirement;
 import java.util.Scanner;
 
 public class Retirement {
-	public static int what_age() {
+	public static void what_age() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("What is your current age?");
 		int age = scan.nextInt();
@@ -26,7 +26,6 @@ public class Retirement {
 		}
 
 		scan.close();
-		return 0;
 	}
 	
 	public static int age_goal_reached(int age, int salary, double percentage_saved, int desired_goal) {	

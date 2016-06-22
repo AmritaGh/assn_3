@@ -26,5 +26,4 @@ public class Retirement_test {
 			
 		Assert.assertEquals(Retirement.age_goal_reached(age, salary, percentage_saved, desired_goal), 0);
 	}
-
 }
