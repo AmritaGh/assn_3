@@ -58,4 +58,17 @@ public class BmiTester {
 		
 		Assert.assertEquals(myCalc.bodyMassIndex(feet, inches, weight), result);
 	}
+	
+	@Test
+	public void tooShortTest1()
+	{
+		float feet = -5;
+		float inches = -10;
+		float weight = 150;
+		String result = "Person too short";
+		
+		BmiCalc myCalc = new BmiCalc();
+		
+		Assert.assertEquals(myCalc.bodyMassIndex(feet, inches, weight), result);
+	}
 }
