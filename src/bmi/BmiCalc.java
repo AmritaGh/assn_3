@@ -1,5 +1,7 @@
 package bmi;
 
+import java.util.Scanner;
+
 public class BmiCalc {
 	
 	public static int what_bmi() {
