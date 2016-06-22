@@ -1,6 +1,6 @@
-package RequirementTest;
+package distance;
 
-import distanceFormula.distancef;
+import distance.distancef;
 import org.junit.Test;
 
 import java.math.BigDecimal;

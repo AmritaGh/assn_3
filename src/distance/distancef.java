@@ -1,4 +1,4 @@
-package distanceFormula;
+package distance;
 import java.lang.Math;
 import java.math.BigDecimal;
 
