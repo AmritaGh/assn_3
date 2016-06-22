@@ -12,12 +12,12 @@ public class Retirement {
 		int salary = scan.nextInt();
 		
 		System.out.println("What is your percentage saved?");
-		int percentage_saved = scan.nextInt();
+		double percentage_saved = scan.nextDouble();
 		
 		System.out.println("What is your desired savings goal?");
 		int desired_goal = scan.nextInt();
 		
-		int age_goal_reached = age_goal_reached(age, salary, (double) percentage_saved, desired_goal);
+		int age_goal_reached = age_goal_reached(age, salary, percentage_saved, desired_goal);
 		if (age_goal_reached != 0){
 			System.out.println("You will be " + age_goal_reached +" when you reach your savings goal.");
 		}
