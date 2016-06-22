@@ -1,9 +1,6 @@
 package main;
 
 import java.util.Scanner;
-import retirement.Retirement;
-import distance.distancef;
-import bmi.BmiCalc;
 
 public class Main {
 	public static void main (String args[]) {
