@@ -2,7 +2,25 @@ package bmi;
 
 public class BmiCalc {
 	
-	public String bodyMassIndex(double feet, double inches, double pounds){
+	public static int what_bmi() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("What is your height in feet and inches (form: F I)?");
+		double feet = scan.nextDouble();
+		double inches = scan.nextDouble();
+		
+		System.out.println("What is your weight in pounds?");
+		double weight = scan.nextDouble();
+		
+		String bmi = bodyMassIndex(feet, inches, weight);
+		
+		System.out.println("You are: " + bmi);
+		
+
+		scan.close();
+		return 0;
+	}
+	
+	public static String bodyMassIndex(double feet, double inches, double pounds){
 		
 		double totalInches = inches + 12 * feet;
 		
