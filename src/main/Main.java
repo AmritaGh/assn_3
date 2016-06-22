@@ -11,6 +11,7 @@ public class Main {
 		switch (selection) {
 	        case 1:
 	        	System.out.println ("Selected BMI\n");
+	        	bmi.BmiCalc.what_bmi();
 	        	break;
 	        case 2:
 	        	retirement.Retirement.what_age();
