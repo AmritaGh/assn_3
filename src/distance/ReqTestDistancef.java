@@ -1,13 +1,10 @@
-package RequirementTest;
-
-import distanceFormula.distancef;
+package distance;
+import distance.Distancef;
 import org.junit.Test;
-
 import java.math.BigDecimal;
-
 import org.junit.Assert;
 
-public class ReqTestDistancef {	
+public class ReqTestDistancef {
 	@Test
 	public void distanceTest1()
 	{
@@ -17,12 +14,11 @@ public class ReqTestDistancef {
 		int y2 = -2;
 		BigDecimal solution = new BigDecimal ("5.00");
 		
-		distancef mydistance = new distancef();
-		System.out.println(mydistance.distance(5, 1, 1, -2));		
+		//Distancef mydistance = new Distancef();
+		System.out.println(Distancef.distanceFormula(5, 1, 1, -2));		
 		
-		Assert.assertEquals(mydistance.distance(x1, x2, y1, y2), solution);
-	}
-	
+		Assert.assertEquals(Distancef.distanceFormula(x1, x2, y1, y2), solution);
+	}	
 	@Test
 	public void distanceTest2()
 	{
@@ -32,10 +28,11 @@ public class ReqTestDistancef {
 		int q2 = -2;
 		BigDecimal solution = new BigDecimal ("3.16");		
 		
-		distancef mydistance = new distancef();
+		//distancef mydistance = new distancef();
 		//System.out.println(solution);
-		System.out.println(mydistance.distance(2,-1,-3,-2));
-		Assert.assertEquals(mydistance.distance(p1, p2, q1, q2), solution);
+		System.out.println(Distancef.distanceFormula(2,-1,-3,-2));
+		Assert.assertEquals(Distancef.distanceFormula(p1, p2, q1, q2), solution);
 	}
+
 
 }

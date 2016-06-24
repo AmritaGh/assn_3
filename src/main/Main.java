@@ -1,5 +1,4 @@
 package main;
-
 import java.util.Scanner;
 
 public class Main {
@@ -16,7 +15,7 @@ public class Main {
 	        	retirement.Retirement.what_age();
 	        	break;
 	        case 3:
-	        	System.out.println ("Selected Distance\n");
+	        	distance.Distancef.userInput();
 	        	break;
 	        case 4:
 	        	System.out.println ("Exiting...");
@@ -27,4 +26,5 @@ public class Main {
 		}
 		scan.close();
 	}
+
 }
